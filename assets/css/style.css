@@ -1,0 +1,34 @@
+
+
+body {
+    background: url(../images/crystal-background.jpg);
+}
+
+.row {
+    margin-top: 10px;
+}
+#title {
+    background-color: steelblue;
+    float: left;
+    color: rgb(197, 206, 180);
+}
+
+#game-rules {
+    float: left;
+    background-color: tan;
+    color: brown;
+}
+
+#number-box {
+    background-color: greenyellow;
+    margin-right: 10px;
+}
+
+#score-box {
+    background-color: aqua;
+}
+
+#gem-pics {
+    width: 100%;
+    height: 80%;
+}
