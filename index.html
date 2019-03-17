@@ -10,6 +10,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
 </head>
 <body>
+
+    <!-- Game Title -->
+
         <div class="container">
             <div class="row">
                 <div class="col-sm-4" id="title">
@@ -17,7 +20,8 @@
                   </div>
             </div>
         </div>
-               
+            
+    <!-- Game Description -->
         
         <div class="container">
             <div class="row">
@@ -33,6 +37,7 @@
             </div>
         </div>    
                
+    <!-- This section shows my Target Number as well as my wins and losses. -->
 
         <div class="container">
             <div class="row">
@@ -40,30 +45,32 @@
                      <h2>Target Number: <span id="target-number"></span></h2>
                  </div>
                 <div class="col-sm-1" id="score-box">
-                    <p>Wins:</p>
-                    <p>Losses:</p>
+                    <p>Wins: <span id ="wins-text"></span></p>
+                    <p>Losses: <span id ="lose-text"></span></p>
                  </div>
             </div>
         </div>
              
-        
+    <!-- This section is where my crystal images are displayed. -->
 
         <div class="container">
             <div class="row">
                 <div class="col-sm-1">
-                    <img src="assets/images/diamond.jpg" class="gem-pics">
+                    <img src="assets/images/diamond.jpg" class="gem-pics" id="blue-gem">
                 </div>
                 <div class="col-sm-1">
-                    <img src="assets/images/ruby.jpg" class="gem-pics">
+                    <img src="assets/images/ruby.jpg" class="gem-pics" id="red-gem">
                 </div>
                 <div class="col-sm-1">
-                    <img src="assets/images/emerald.jpg" class="gem-pics">
+                    <img src="assets/images/emerald.jpg" class="gem-pics" id="green-gem">
                 </div>
                 <div class="col-sm-1">
-                    <img src="assets/images/amethyst.jpg" class="gem-pics">
+                    <img src="assets/images/amethyst.jpg" class="gem-pics" id="purple-gem">
                 </div>
             </div>
         </div>
+
+    <!-- This section will display my current score. -->
 
         <div class="container">
             <div class="row">
@@ -76,10 +83,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-2" id="total-score">
-                    <h2>0</h2>
+                    <h2><span id="score-number"></span></h2>
                 </div>
             </div>
         </div>
+
+    <!-- This is the link to my Javascript file -->
 
     <script src="./assets/javascript/game.js"></script>
 </body>
