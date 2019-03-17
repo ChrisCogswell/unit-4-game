@@ -46,3 +46,11 @@ body {
     margin-bottom: 15px;
     height: 75px;
 }
+
+#start-box {
+    color: red;
+}
+
+#reset-box {
+    color: yellow;
+}
