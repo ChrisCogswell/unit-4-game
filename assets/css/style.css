@@ -36,6 +36,10 @@ body {
     margin-left: -15px;
 }
 
+.gem-pics:hover {
+    opacity: 0.5;
+}
+
 #total-text {
     background-color: skyblue;
     height: 30px;
