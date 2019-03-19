@@ -65,17 +65,7 @@ $("#blue-gem").on("click", function(){
     $("#score-number").text(counter);
 
     winLose();
-    // if (counter === targetNumber) {
-    //  wins++;
-    //  $("#wins-text").text(wins);
-    //  resetGame();
-    // }
 
-    // else if (counter > targetNumber){
-    //  losses++;
-    //  $("#lose-text").text(losses);
-    //  resetGame();
-    // }
 });
 
 // Red Gem
@@ -88,17 +78,7 @@ $("#red-gem").on("click", function(){
     $("#score-number").text(counter);
 
     winLose();
-    // if (counter === targetNumber) {
-    //  wins++;
-    //  $("#wins-text").text(wins);
-    //  resetGame();
-    // }
 
-    // else if (counter > targetNumber){
-    //  losses++;
-    //  $("#lose-text").text(losses);
-    //  resetGame();
-    // }
 });
 
 // Green Gem
@@ -112,17 +92,6 @@ $("#green-gem").on("click", function(){
 
     winLose();
 
-    // if (counter === targetNumber) {
-    //  wins++;
-    //  $("#wins-text").text(wins);
-    //  resetGame();
-    // }
-
-    // else if (counter > targetNumber){
-    //  losses++;
-    //  $("#lose-text").text(losses);
-    //  resetGame();
-    // }
 });
 
 // Purple Gem
@@ -135,17 +104,6 @@ $("#purple-gem").on("click", function(){
     $("#score-number").text(counter);
 
     winLose();
-    // if (counter === targetNumber) {
-    //  wins++;
-    //  $("#wins-text").text(wins);
-    //  resetGame();
-    // }
-
-    // else if (counter > targetNumber){
-    //  losses++;
-    //  $("#lose-text").text(losses);
-    //  resetGame();
-    // }
 });
 
 // Reset Button
