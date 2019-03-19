@@ -25,8 +25,14 @@ $("#target-number").text(targetNumber);
     console.log(blueGemValue, redGemValue, greenGemValue, purpleGemValue);
 
     function resetGame() {
-        var counter = 0;
-        var targetNumber = 19 + Math.floor(Math.random() * 101);
+        counter = 0;
+        targetNumber = 19 + Math.floor(Math.random() * 101);
+        blueGemValue = 2 + Math.floor(Math.random() * 3);
+        redGemValue = 5 + Math.floor(Math.random() * 3);
+        greenGemValue = 7 + Math.floor(Math.random() * 4);
+        purpleGemValue = 10 + Math.floor(Math.random() * 4);
+
+        console.log(blueGemValue, redGemValue, greenGemValue, purpleGemValue);
 
         $("#target-number").text(targetNumber);
         $("#score-number").text(counter);
@@ -51,12 +57,16 @@ $("#blue-gem").on("click", function(){
 
     if (counter === targetNumber) {
      wins++;
+    //  counter = 0;
+    //  $("#score-number").text(counter);
      $("#wins-text").text(wins);
      resetGame();
     }
 
     else if (counter > targetNumber){
      losses++;
+    //  counter = 0;
+    //  $("#score-number").text(counter);
      $("#lose-text").text(losses);
      resetGame();
     }
@@ -74,12 +84,16 @@ $("#red-gem").on("click", function(){
 
     if (counter === targetNumber) {
      wins++;
+    //  counter = 0;
+    //  $("#score-number").text(counter);
      $("#wins-text").text(wins);
      resetGame();
     }
 
     else if (counter > targetNumber){
      losses++;
+    //  counter = 0;
+    //  $("#score-number").text(counter);
      $("#lose-text").text(losses);
      resetGame();
     }
@@ -97,12 +111,16 @@ $("#green-gem").on("click", function(){
 
     if (counter === targetNumber) {
      wins++;
+    //  counter = 0;
+    //  $("#score-number").text(counter);
      $("#wins-text").text(wins);
      resetGame();
     }
 
     else if (counter > targetNumber){
      losses++;
+    //  counter = 0;
+    //  $("#score-number").text(counter);
      $("#lose-text").text(losses);
      resetGame();
     }
@@ -120,12 +138,16 @@ $("#purple-gem").on("click", function(){
 
     if (counter === targetNumber) {
      wins++;
+    //  counter = 0;
+    //  $("#score-number").text(counter);
      $("#wins-text").text(wins);
      resetGame();
     }
 
     else if (counter > targetNumber){
      losses++;
+    //  counter = 0;
+    //  $("#score-number").text(counter);
      $("#lose-text").text(losses);
      resetGame();
     }
