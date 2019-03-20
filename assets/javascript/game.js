@@ -2,16 +2,26 @@ $(document).ready(function() {
 
 // Global Variables
 
-var counter = 0;
-var wins = 0;
-var losses = 0;
+    var counter = 0;
+    var wins = 0;
+    var losses = 0;
 
 $("#score-number").text(counter);
 
+// Wins and Lose sound effects
+
+    var audioElement = document.createElement("audio");
+
+    audioElement.setAttribute("src", "./assets/sound/sms-alert-3-daniel_simon.mp3");
+
+    var audioElement2 = document.createElement("audio");
+
+    audioElement2.setAttribute("src", "./assets/sound/sms-alert-5-daniel_simon.mp3");
+
 // Target Number behavior
 
-var targetNumber = 19 + Math.floor(Math.random() * 101);
-$("#target-number").text(targetNumber);
+    var targetNumber = 19 + Math.floor(Math.random() * 101);
+    $("#target-number").text(targetNumber);
 
 // Variables for my crystal values
     
@@ -22,6 +32,8 @@ $("#target-number").text(targetNumber);
 
     
     console.log(blueGemValue, redGemValue, greenGemValue, purpleGemValue);
+
+// This function resets the game when you win or lose
 
     function resetGame() {
         counter = 0;
@@ -35,25 +47,26 @@ $("#target-number").text(targetNumber);
 
         $("#target-number").text(targetNumber);
         $("#score-number").text(counter);
-      }
+      };
+
+// This function determines how you win or lose
 
       function winLose(){
         if (counter === targetNumber) {
             wins++;
             $("#wins-text").text(wins);
+            audioElement.play();
             resetGame();
            }
        
            else if (counter > targetNumber){
             losses++;
             $("#lose-text").text(losses);
+            audioElement2.play();
             resetGame();
            }
-      }
+      };
  
-//     $("#start-box").on("click", function(){
-// });
-
 // Blue Gem
 
 $("#blue-gem").on("click", function(){
@@ -105,11 +118,5 @@ $("#purple-gem").on("click", function(){
 
     winLose();
 });
-
-// Reset Button
-
-// $("#reset-box").on("click", function() {
-//     resetGame();
-// });
 
 });
